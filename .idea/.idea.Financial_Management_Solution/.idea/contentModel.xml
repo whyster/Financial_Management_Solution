@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Aleksey\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Aleksey\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Financial_Management_Solution.1548818677.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Aleksey\RiderProjects\Financial_Management_Solution" t="IncludeFlat">
+      <e p="Financial_Management_Project" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Financial_Management_Project.csproj" t="IncludeRecursive" />
+        <e p="GeneralTab.cs" t="Include" />
+        <e p="GeneralTab.Designer.cs" t="Include" />
+        <e p="GeneralTab.resx" t="Include" />
+        <e p="MortgageForm.cs" t="Include" />
+        <e p="MortgageForm.Designer.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+      </e>
+      <e p="Financial_Management_Solution.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
