@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Threading;
 
 namespace Financial_Management_Project {
-    public class Debounce_Handler {
+    
+    
+    public class Debounce_Handler : IDebounceHandler {
         public int default_waiter_milli_seconds { get; set; }
         public Dictionary<string, Timer> _timers { get; }
         

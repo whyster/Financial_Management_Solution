@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Financial_Management_Project {
     public partial class Mortgage_Tab : UserControl {
-        private Dictionary<string, float?> variables;
+        // private Dictionary<string, float?> variables;
         private const int MonthCoefficient = 12;
         private const string MortgagePayment = "mortgage_payment";
         private const string PrincipleLoan = "principle_loan";
@@ -12,58 +12,37 @@ namespace Financial_Management_Project {
         private const string MonthlyCount = "monthly_payments";
         
         
-        private Debounce_Handler _debounceHandler;
         
+        // private Debounce_Handler _debounceHandler;
+        private Mortgage_Logic _logic;
         public Mortgage_Tab() {
-            _debounceHandler = new Debounce_Handler();
-            variables = new Dictionary<string, float?>();
-            variables.Add(MortgagePayment, null);
-            variables.Add(PrincipleLoan, null);
-            variables.Add(MonthlyInterestRate, null);
-            variables.Add(MonthlyCount, null);
+            _logic = new Mortgage_Logic();
 
-            _debounceHandler.Add(MortgagePayment, mortgage_TextChanged);
-            _debounceHandler.Add(PrincipleLoan, principle_TextChanged);
-            _debounceHandler.Add(MonthlyInterestRate, interest_TextChanged);
-            _debounceHandler.Add(MonthlyCount, years_TextChanged);
+            
+            _logic.Add(MortgagePayment, mortgage_TextChanged);
+            _logic.Add(PrincipleLoan, principle_TextChanged);
+            _logic.Add(MonthlyInterestRate, interest_TextChanged);
+            _logic.Add(MonthlyCount, years_TextChanged);
             InitializeComponent();
         }
+        
 
         private void mortgage_TextChanged(object sender, EventArgs e) {
-            _debounceHandler.Change(MortgagePayment);
-            if (!sender.Equals(_debounceHandler)) return;
-
-            variables[MortgagePayment] = float.Parse(mortgage_box.Text);
-            throw new System.NotImplementedException();
-            return;
-
-
+            _logic.Handle_Variable_Input(sender, MortgagePayment, mortgage_box);
         }
 
+
+
         private void principle_TextChanged(object sender, EventArgs e) {
-            _debounceHandler.Change(PrincipleLoan);
-            if (!sender.Equals(_debounceHandler)) return;
-            
-            variables[PrincipleLoan] = float.Parse(principle_box.Text);
-            throw new System.NotImplementedException();
+            _logic.Handle_Variable_Input(sender, PrincipleLoan, principle_box);
         }
 
         private void interest_TextChanged(object sender, EventArgs e) {
-            _debounceHandler.Change(MonthlyInterestRate);
-            if (!sender.Equals(_debounceHandler)) return;
-            
-            variables[MonthlyInterestRate] = float.Parse(interest_box.Text) / MonthCoefficient;
-            
-            throw new System.NotImplementedException();
+            _logic.Handle_Variable_Input(sender, MonthlyInterestRate, interest_box, MonthCoefficient);
         }
 
         private void years_TextChanged(object sender, EventArgs e) {
-            _debounceHandler.Change(MonthlyCount);
-            if (!sender.Equals(_debounceHandler)) return;
-            
-            variables[MonthlyCount] = float.Parse(years_box.Text) * MonthCoefficient;
-            
-            throw new System.NotImplementedException();
+            _logic.Handle_Variable_Input(sender, MonthlyCount, years_box, MonthCoefficient);
         }
     }
 }

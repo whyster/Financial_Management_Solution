@@ -4,7 +4,18 @@
     <projectFile>Financial_Management_Project/Financial_Management_Project.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4d01045-2305-42dd-bce1-0dcd2a23c774" name="Default Changelist" comment="" />
+    <list default="true" id="e4d01045-2305-42dd-bce1-0dcd2a23c774" name="Default Changelist" comment="debounce text change handling">
+      <change afterPath="$PROJECT_DIR$/Financial_Management_Project/IDebounceHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Financial_Management_Project/Mortgage_Logic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Financial_Management_Solution/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Financial_Management_Solution/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Financial_Management_Solution/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Financial_Management_Solution/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Financial_Management_Solution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Financial_Management_Solution/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Financial_Management_Project/Debounce_Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Financial_Management_Project/Debounce_Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Financial_Management_Project/Financial_Management_Project.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Financial_Management_Project/Financial_Management_Project.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Financial_Management_Project/General_Tab.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Financial_Management_Project/General_Tab.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Financial_Management_Project/Mortgage_Tab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Financial_Management_Project/Mortgage_Tab.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Financial_Management_Project/obj/Debug/Financial_Management_Project.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Financial_Management_Project/obj/Debug/Financial_Management_Project.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,15 +24,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Financial_Management_Project/MortgageTab.Designer.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Financial_Management_Project/MortgageForm.cs" />
-        <option value="$PROJECT_DIR$/Financial_Management_Project/GeneralTab.Designer.cs" />
-        <option value="$PROJECT_DIR$/Financial_Management_Project/GeneralTab.cs" />
-        <option value="$PROJECT_DIR$/Financial_Management_Project/Program.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Financial_Management_Project/IDebounceHandler.cs" />
+      <option value="$PROJECT_DIR$/Financial_Management_Project/Debounce_Handler.cs" />
+      <option value="$PROJECT_DIR$/Financial_Management_Project/Mortgage_Tab.cs" />
+      <option value="$PROJECT_DIR$/Financial_Management_Project/Mortgage_Logic.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1itB0u2BuoZ1y1fQcDfRXT5mKo5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,7 +52,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -65,6 +91,9 @@
       <updated>1602716789943</updated>
       <workItem from="1602716800041" duration="600000" />
       <workItem from="1602724157671" duration="2231000" />
+      <workItem from="1616085513973" duration="3625000" />
+      <workItem from="1616206617326" duration="1683000" />
+      <workItem from="1616290915193" duration="3007000" />
     </task>
     <servers />
   </component>
@@ -73,6 +102,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

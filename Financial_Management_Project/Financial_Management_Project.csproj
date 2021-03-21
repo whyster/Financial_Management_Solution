@@ -56,6 +56,8 @@
         <Compile Include="General_Tab.Designer.cs">
             <DependentUpon>General_Tab.cs</DependentUpon>
         </Compile>
+        <Compile Include="IDebounceHandler.cs" />
+        <Compile Include="Mortgage_Logic.cs" />
         <Compile Include="Mortgage_Tab.cs">
           <SubType>Form</SubType>
         </Compile>
